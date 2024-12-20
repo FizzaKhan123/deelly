@@ -56,3 +56,80 @@ export const ServicesLinks:ServicesItem [] =[
 
 
 ];
+
+
+// Filter Options
+export const diningOptions = [
+    {
+      label: "Restaurants",
+      value: "restaurants"
+    },
+    {
+      label: "Cafes",
+      value: "cafes"
+    },
+    {
+      label: "Fast Food",
+      value: "fast-food"
+    }
+];
+  
+  export const categoryOptions = [
+    {
+      label: "All Categories",
+      value: "all"
+    },
+    {
+      label: "Pakistani",
+      value: "pakistani"
+    },
+    {
+      label: "Chinese",
+      value: "chinese"
+    }
+  ];
+  
+  export const subCategoryOptions = [
+    {
+      label: "BBQ",
+      value: "bbq"
+    },
+    {
+      label: "Seafood",
+      value: "seafood"
+    },
+    {
+      label: "Desserts",
+      value: "desserts"
+    }
+  ];
+  
+  export const cityOptions = [
+    {
+      label: "Lahore",
+      value: "lahore"
+    },
+    {
+      label: "Karachi",
+      value: "karachi"
+    },
+    {
+      label: "Islamabad",
+      value: "islamabad"
+    }
+  ];
+  
+  export const destinationOptions = [
+    {
+      label: "Johar Town",
+      value: "johar-town"
+    },
+    {
+      label: "Gulberg",
+      value: "gulberg"
+    },
+    {
+      label: "DHA",
+      value: "dha"
+    }
+  ] ;

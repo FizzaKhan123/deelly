@@ -21,6 +21,8 @@ export const theme = {
       softPeach: "#EDEDED",
       sherwoodGreen: "#013D29",
       seaGreen: "#219653",
+      mercury: "#E7E7E7",
+      snowDrift: "#F9F9F9",
     },
     backgroundImage: {
       "custom-green-blue-gradient":
