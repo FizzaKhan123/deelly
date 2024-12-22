@@ -6,8 +6,8 @@ import Button from '../Buttons/CutomizeButton.tsx';
 
 const FilterSection = () => {
   return (
-    <>
-    <div className='flex flex-col  gap-y-3 w-5/6 mx-auto h-140 border rounded-custom-10 shadow-custom2 p-10'>
+    <div className='bg-snowDrift'>
+    <div className='relative bg-white z-10 flex flex-col  gap-y-3 w-5/6 mx-auto h-140 border rounded-custom-10 shadow-custom2 p-10 -translate-y-1/2 '>
       <div className='flex  flex-row gap-x-3'>
         <div className='flex-1'>
         <Dropdown options={diningOptions} initValue='Dinning' />
@@ -32,7 +32,7 @@ const FilterSection = () => {
             <Button height={40} width={120} bgColor={"sherwoodGreen"} type='black' text='Search'/>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

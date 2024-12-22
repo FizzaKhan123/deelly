@@ -16,7 +16,7 @@ const HomeSection = () => {
                     Explore nearby deals on map and buy deals to enjoy quality food with your family
                     </p>
                 </div> 
-             <Button text='Explore' height={56} width={169} bgColor={"sherwoodGreen"} type='black'/>   
+             <Button text='Explore' height={56} width={169} type='black'/>   
             </div> 
             <div className='absolute right-0 bottom-4'>
                 <img src={Hotel} alt='hotel'/>

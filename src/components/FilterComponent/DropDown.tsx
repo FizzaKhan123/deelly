@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DropdownIcon from '../../assets/icons/DropdownIcon.tsx'; // Your custom dropdown icon
+import DropdownIcon from '../../assets/icons/DropdownIcon.tsx';
 
 interface DropDownProps {
   options: { label: string; value: string }[];
@@ -14,15 +14,15 @@ const Dropdown = ({ options, initValue }: DropDownProps) => {
   const handleSelect = (option: string) => {
     setSelectedOption(option);
     setIsOpen(false);
-    setHighlightedIndex(-1); // Reset highlighted index after selection
+    setHighlightedIndex(-1); 
   };
 
-  // Handle key navigation (up/down)
+ 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowDown') {
-      setHighlightedIndex((prev) => (prev + 1) % options.length); // Loop back to first option
+      setHighlightedIndex((prev) => (prev + 1) % options.length); 
     } else if (e.key === 'ArrowUp') {
-      setHighlightedIndex((prev) => (prev - 1 + options.length) % options.length); // Loop back to last option
+      setHighlightedIndex((prev) => (prev - 1 + options.length) % options.length); 
     } else if (e.key === 'Enter' && highlightedIndex >= 0) {
       handleSelect(options[highlightedIndex].label);
     }
@@ -53,9 +53,9 @@ const Dropdown = ({ options, initValue }: DropDownProps) => {
               key={index}
               className={`w-full px-4 py-2 text-left text-gray-700 focus:outline-none ${
                 index === highlightedIndex
-                  ? 'bg-snowDrift' // Highlight when focused
+                  ? 'bg-[#F2FFFB]' // Highlight when focused
                   : '' // Default background
-              } ${selectedOption === option.label ? 'bg-mercury' : ''}`} 
+              } ${selectedOption === option.label ? 'bg-aquaSpring' : ''}`} 
               onClick={() => handleSelect(option.label)}
               onMouseEnter={() => setHighlightedIndex(index)} 
               onMouseLeave={() => setHighlightedIndex(-1)} 

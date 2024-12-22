@@ -4,12 +4,18 @@ export const content = [
 ];
 export const theme = {
   extend: {
+    fontFamily: {
+      outfit: ["Outfit", "sans-serif"], // Add Outfit to the font family
+    },
     borderRadius: {
       "custom-10": "10px",
+      "custom-20": "20px",
     },
     boxShadow: {
       custom: "0px 24px 50px 0px rgba(0, 0, 0, 0.2)",
       custom2: "0px 20px 50px 0px rgba(0, 0, 0, 0.1)",
+      boxShadowFeatureCard: "0px 4px 50px 0px #0000000D",
+      locationPopover: "0px 20px 50px 0px #00000026",
     },
     colors: {
       brightGray: "#E4E6ED",
@@ -23,6 +29,15 @@ export const theme = {
       seaGreen: "#219653",
       mercury: "#E7E7E7",
       snowDrift: "#F9F9F9",
+      iceBerg: "#D5F4ED",
+      whiteRock: "#F5E3DB",
+      palePink: "#F5DCDC",
+      linkWater: "#CFE9FE",
+      surf: "#BED8CB",
+      lightGrey: "#DEDEDE",
+      lightPeach: "#EFEFEF",
+      eggSour: "#FCF5DC",
+      cyanBlue: "#E0E6EB",
     },
     backgroundImage: {
       "custom-green-blue-gradient":
@@ -106,6 +121,7 @@ export const plugins = [
         fontSize: "14px",
         fontWeight: "400",
         lineHeight: "24px",
+        letterSpacing: "-0.03em",
       },
       ".text-lg-normal-relax": {
         fontSize: "14px",

@@ -1,9 +1,10 @@
 import React from "react";
 import UnderLine from "../assets/icons/UnderLine.svg";
 
+
 interface UnderLineWordProps {
   text: string;
-  styling?: string; // Optional prop for custom text styling
+  styling: string; 
 }
 
 const UnderLineWord = ({ text, styling }: UnderLineWordProps) => {
