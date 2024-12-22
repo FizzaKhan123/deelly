@@ -3,7 +3,7 @@ import {ServicesOptions} from "../constants/constants.ts"
 
 const Services = () => {
   return (
-    <div className='bg-snowDrift'>
+    <div className='bg-snowDrift hidden lg:flex'>
     <div className='pb-8 flex justify-between w-5/6 mx-auto border-b border-b-surf '>
      {
         ServicesOptions.map((item)=>(

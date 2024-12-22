@@ -21,7 +21,9 @@ const DealHeader = ({ headerText,headerUnderlineWord,text}:DealHeaderProps) => {
       </p>
       <p className='text-2xl-normal'>{text}</p>
       </div>
+      <div className='hidden lg:inline-block'>
       <Button height={56} width={169} text={'View on Map'} type={'black'}/>
+      </div>
     </div>
 
   )

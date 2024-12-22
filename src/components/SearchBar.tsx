@@ -3,7 +3,7 @@ import SearchIcon from '../assets/icons/Search.tsx';
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center border rounded-custom-10  p-2 w-full max-w-72 h-11">
+    <div className="flex items-center border rounded-custom-10  p-2 w-full  h-11">
       <SearchIcon />
       <input
         type="text"

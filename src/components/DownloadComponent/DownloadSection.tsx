@@ -9,7 +9,7 @@ const DownloadSection = () => {
     <div>
     <div className='bg-white  px-4 sm:px-8 md:px-10 xl:px-32 py-4  md:py-10 xl:py-30 '>
         <div className='flex bg-mintCream border rounded-custom-20 border-surf '>
-           <div className='flex p-6 justify-center items-center'>
+           <div className='flex flex-col md:flex-row p-6 justify-center items-center gap-2'>
               <div className='flex-1'>
                 <div className='w-[86%] m-auto'>
                 <img className='w-full h-auto' src={MobilePhone} alt='phone'  />
@@ -25,7 +25,7 @@ const DownloadSection = () => {
                 them with you. To avail of offers, find our app in the play store
                 </p>
                 </div>
-                <div className='flex flex-col sm:flex-row gap-5'>
+                <div className='flex flex-col md:flex-row gap-5 items-center items-center'>
                   <img src={GooglePlay} alt="GooglePlay" width={166} height={55}/>
                   <img src={AppStore} alt="App store" width={166} height={55}/>
                 </div>
