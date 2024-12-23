@@ -56,7 +56,7 @@ export default function LocationPopover({ locationsData }: LocationPopoverProps)
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
       >
-     <p className='underline '> {locationsData.count} </p>
+     <p className='underline '> +{locationsData.count}more  </p>
       </div>
       {isOpen && (
         <div
