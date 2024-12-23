@@ -25,7 +25,7 @@ const DownloadSection = () => {
                 them with you. To avail of offers, find our app in the play store
                 </p>
                 </div>
-                <div className='flex flex-col md:flex-row gap-5 items-center items-center'>
+                <div className='flex flex-col md:flex-row gap-5  items-center'>
                   <img src={GooglePlay} alt="GooglePlay" width={166} height={55}/>
                   <img src={AppStore} alt="App store" width={166} height={55}/>
                 </div>

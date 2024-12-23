@@ -25,6 +25,7 @@ export type Services = ServicesItem[];
 
 type SVGIcon = React.FC<React.SVGProps<SVGSVGElement>>
 export type PaymentFeature = {
+  id:number
   title: string
   description: string
   icon: string
@@ -46,6 +47,7 @@ export interface Deal {
   discount: string;
   dishName: string;
   locations: string[];
+  isFavourite:boolean;
   moreLocations: LocationDetails;
   chef: ChefDetails;
 }

@@ -9,8 +9,6 @@ interface LocationPopoverProps {
 }
 
 export default function LocationPopover({ locationsData }: LocationPopoverProps) {
-  // Don't call hooks conditionally, ensure that useState and useEffect are always called.
-  console.log(locationsData);
   const [isOpen, setIsOpen] = useState(false);
   const [isPermanent, setIsPermanent] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);

@@ -49,6 +49,16 @@ const Navbar = () => {
         </div>
       </div>
 
+      <div className='h-[1px] hidden lg:block'></div>
+      <div className='px-16 h-[60px] items-center gap-x-6 w-[80%] justify-between hidden lg:flex'>
+      {ServicesLinks.map((item)=>(
+         <div key={item.id} className='flex items-center gap-x-2'>
+          <img src={item.icon} alt={item.alt}/>
+          <p className='text-lg-normal-relax'>{item.text}</p>
+         </div>
+      ))}
+       </div>
+    
     
     
       {isModalOpen && (

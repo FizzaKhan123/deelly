@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface HeartProps {
-  isClicked: boolean; // This prop will control the heart's color
+  isClicked: boolean | undefined; // This prop will control the heart's color
 }
 
 const Heart = ({ isClicked }: HeartProps) => {

@@ -205,18 +205,21 @@ export const diningOptions = [
 
 export const PaymentFeatureOption: PaymentFeature[] = [
   {
+    id:1,
     title: "Amazing Last Minute Discounts",
     description: "Get Amazing Last Minute Discounts on your favorite categories that, or locally, get yours & more",
     icon: Discount,
     alt: "Tag icon representing discounts and offers"
   },
   {
+    id:2,
     title: "Save",
     description: "Save Money with our deals of offers",
     icon: Save,
     alt: "Piggy bank icon representing savings"
   },
   {
+    id:3,
     title: "Secure Payments",
     description: "This Secure payment method ensures that your data is safe & secure your data secure is safe",
     icon: Payment,
@@ -226,138 +229,145 @@ export const PaymentFeatureOption: PaymentFeature[] = [
 
 
 
-export const NearByDeals: Deal[] = [
-  {
-    bannerImage: Dish1,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "+2 more",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan"],
-      },
+// export const NearByDeals: Deal[] = [
+//   {
+//     bannerImage: Dish1,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "+2 more",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan"],
+//       },
     
-    chef: {
-      chefPicture: Chef1,
-      chefName: "Aloo Cart",
-    },
-  },
-  {
-    bannerImage: Dish2,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "+5 more",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Jhang","Pakistan,Kasur","Pakistan,Multan"],
-      },
-    chef: {
-      chefPicture: Chef2,
-      chefName: "Aloo Cart",
-    },
-  },
-  {
-    bannerImage: Dish3,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "+3 more",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Multan"],
-      },
-    chef: {
-      chefPicture: Chef3,
-      chefName: "Aloo Cart",
-    },
-  },
+//     chef: {
+//       chefPicture: Chef1,
+//       chefName: "Aloo Cart",
+//     },
+//   },
+//   {
+//     bannerImage: Dish2,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "+5 more",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Jhang","Pakistan,Kasur","Pakistan,Multan"],
+//       },
+//     chef: {
+//       chefPicture: Chef2,
+//       chefName: "Aloo Cart",
+//     },
+//   },
+//   {
+//     bannerImage: Dish3,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "+3 more",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Multan"],
+//       },
+//     chef: {
+//       chefPicture: Chef3,
+//       chefName: "Aloo Cart",
+//     },
+//   },
   
-];
+// ];
 
 
 
-export const DealsOfTheDay :  Deal[] = [
-  {
-    bannerImage: Dish4,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "2",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan"],
-      },
-    chef: {
-      chefPicture: Chef1,
-      chefName: "Aloo Cart",
-    },
-  },
-  {
-    bannerImage: Dish5,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "5",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Jhang","Pakistan,Kasur","Pakistan,Multan"],
-      },
-    chef: {
-      chefPicture: Chef2,
-      chefName: "Aloo Cart",
-    },
-  },
-  {
-    bannerImage: Dish6,
-    discount: "Flat 15% Off",
-    dishName: "Loaded Fries At Aloo Cart",
-    locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
-    moreLocations: 
-      {
-        count: "3",
-        locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Multan"],
-      },
+// export const DealsOfTheDay :  Deal[] = [
+//   {
+//     bannerImage: Dish4,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "2",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan"],
+//       },
+//     chef: {
+//       chefPicture: Chef1,
+//       chefName: "Aloo Cart",
+//     },
+//   },
+//   {
+//     bannerImage: Dish5,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "5",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Jhang","Pakistan,Kasur","Pakistan,Multan"],
+//       },
+//     chef: {
+//       chefPicture: Chef2,
+//       chefName: "Aloo Cart",
+//     },
+//   },
+//   {
+//     bannerImage: Dish6,
+//     discount: "Flat 15% Off",
+//     dishName: "Loaded Fries At Aloo Cart",
+//     locations: ["Pakistan,Lahore", "Pakistan,Lahore"],
+//     moreLocations: 
+//       {
+//         count: "3",
+//         locations: ["Pakistan,Karachi", "Pakistan,Multan","Pakistan,Multan"],
+//       },
     
-    chef: {
-      chefPicture: Chef3,
-      chefName: "Aloo Cart",
-    },
-  },
+//     chef: {
+//       chefPicture: Chef3,
+//       chefName: "Aloo Cart",
+//     },
+//   },
   
-];
+// ];
 export const OurCompany=["About Us", "Privacy & Policy", "Contact Us", "FAQs", "Terms & Conditions"];
 
 
 export const PaymentPartners=[
   {
+    id:1,
     icon:Visa,
     alt:'Visa'
   },
-  {
+  { 
+    id:2,
     icon:ApplePay,
     alt:'ApplePay'
   },
   {
+    id:3,
     icon:SumsungPay,
     alt:'SumsungPay'
   },
   {
+    id:4,
     icon:MasterCard,
     alt:'MasterCard'
   },
 ]
 export const SocialApps=[
   {
+    id:1,
     icon:FaceBook,
     alt:'FaceBook'
   },
   {
+    id:2,
     icon:Twitter,
     alt:'Twitter'
   },
   {
+    id:3,
     icon:Instagram,
     alt:'Instagram'
   },

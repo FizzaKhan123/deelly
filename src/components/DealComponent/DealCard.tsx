@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Dish1 from "../../assets/images/Dish1.png";
 import Heart from '../../assets/icons/Heart.tsx';
 import Star from "../../assets/icons/Stars.svg";
@@ -7,33 +7,53 @@ import Location from "../../assets/icons/Location.svg";
 import Button from '../Buttons/CutomizeButton.tsx';
 import LocationPopover from './LocationPopover.tsx';
 import { Deal } from '../../types/type.ts';
+import {addFavourite} from "../../backend/api.js";
 
 const DealCard = ({ options }: { options: Deal | undefined }) => {
-  const [isHeartClicked, setIsHeartClicked] = useState(false);  // Track heart click state
-
+  const [isHeartClicked, setIsHeartClicked] = useState<boolean | undefined>();
+  useEffect(()=>{
+      setIsHeartClicked(options?.isFavourite);
+  },[])
   if (!options) {
     return <div>Loading...</div>;
   }
+  // else{
+  //  const {isFavourite}=options;
+  //   setIsHeartClicked(isFavourite)
+  // }
 
-  const { bannerImage, discount, dishName, locations, moreLocations, chef } = options;
+  const { _id,bannerImage, discount, dishName, locations, moreLocations, chef,isFavourite } = options;
+ 
 
-  const handleHeartClick = () => {
-    setIsHeartClicked(prevState => !prevState);  // Toggle heart click state
-  };
+const markAsFavourite = async (dealId:string ,like:boolean | undefined ) => {
+  try {
+    const response=await addFavourite(dealId, !like);
+    if(response.status === 200){
+      setIsHeartClicked(!isHeartClicked);
+    }
+    console.log(response);
+  } catch (error) {
+    console.error('Error marking deal as favourite:', error);
+  }
+};
+
 
   return (
-    <div className="flex-1 rounded-custom-20 transform transition-transform duration-300 hover:scale-105 hover:-translate-y-2">
+    <div className="flex-1 rounded-custom-20 transform transition-transform duration-300 hover:scale-105 hover:-translate-y-2"    >
       <div className="relative">
         <img
-          className="w-full"
+          className="w-full max-h-[200px] rounded-t-custom-20"
           src={bannerImage || "/path/to/default-image.png"}
           alt={dishName}
         />
         <div
           className="absolute top-6 right-11 h-10 w-10 rounded-full bg-white flex justify-center items-center shadow-md cursor-pointer"
-          onClick={handleHeartClick}  // Toggle heart color on click
+          onClick={(event) => {
+            event.preventDefault(); 
+            markAsFavourite(_id,isHeartClicked); 
+          }}
         >
-          <Heart isClicked={isHeartClicked} />  {/* Pass the heart click state */}
+          <Heart isClicked={isHeartClicked} /> 
         </div>
       </div>
       <div>
@@ -70,7 +90,7 @@ const DealCard = ({ options }: { options: Deal | undefined }) => {
           <div className="h-[1px] bg-lightPeach"></div>
           <div className="flex justify-between p-8">
             <div className="flex gap-5 items-center">
-              <img src={chef?.chefPicture || "/path/to/default-chef.png"} alt={chef?.chefName} height={36} width={36} />
+              <img className='rounded-full min-h-[36px] min-w-[36px]' src={chef?.chefPicture || "/path/to/default-chef.png"} alt={chef?.chefName}  height={36} width={36} />
               <p className="text-base-sbold-normal">{chef?.chefName || "Unknown Chef"}</p>
             </div>
             <Button height={34} width={120} text={"Get Offer"} type={"green"} />

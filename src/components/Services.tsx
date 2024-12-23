@@ -7,7 +7,7 @@ const Services = () => {
     <div className='pb-8 flex justify-between w-5/6 mx-auto border-b border-b-surf '>
      {
         ServicesOptions.map((item)=>(
-          <div >
+          <div key={item.id}>
             <div className='flex justify-center items-center h-[100px] w-[100px] rounded-full' 
              style={{ backgroundColor: item.backgroundColor }}
             >

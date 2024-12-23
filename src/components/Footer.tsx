@@ -29,7 +29,7 @@ const Footer = () => {
             <div className='flex gap-2'>
             {
               PaymentPartners.map((item)=>(
-               <div className='flex p-2 h-[44px] w-[61px] border-[0.5px] rounded-custom-10  border-cyanBlue'>
+               <div key={item.id} className='flex p-2 h-[44px] w-[61px] border-[0.5px] rounded-custom-10  border-cyanBlue'>
                 <img src={item.icon} alt={item.icon} />
               </div>
               )) }
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className='gap-3 flex '>
             {
              SocialApps.map((item)=>(
-               <img src={item.icon} alt={item.alt} height={32} width={32}/>
+               <img key={item.id} src={item.icon} alt={item.alt} height={32} width={32}/>
              ))
             }
         </div>
